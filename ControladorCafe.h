@@ -45,19 +45,15 @@ class ControladorCafe {
         verde.encenderLed(8);
         rojo.apagarLed(10);
         amarillo.apagarLed(9);
-        Serial.print("Luz: ");
-        Serial.println(lectorLuz());
-        Serial.println("----------------------------------");
-        Serial.print("Temperatura: ");
+        Serial.print(lectorLuz());
+        Serial.print(",");
         Serial.println(lectorTemperatura());
       } else {
           verde.apagarLed(8);
           rojo.encenderLed(10);
           amarillo.apagarLed(9);
-          Serial.print("Luz: ");
-          Serial.println(lectorLuz());
-          Serial.println("----------------------------------");
-          Serial.print("Temperatura: ");
+          Serial.print(lectorLuz());
+          Serial.print(",");
           Serial.println(lectorTemperatura());
         }
 
